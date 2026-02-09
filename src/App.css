@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+body{
+    background: linear-gradient(black,black, rgb(12, 26, 12));
+    color: white;
+}
+.nav-bar{
+    background: linear-gradient( black, rgb(15, 27, 15));
+}
+.nav-font{
+    font-size: 19px;
+}
+.nav-text:hover{
+    color: rgb(33, 71, 33);
+}
+.profile{
+    width: 320px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 16px;
+    animation: zoomFade 1s ease-out forwards;
+    animation-delay: 0.8s;
+}
+@keyframes zoomFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.hero-text{
+    font-size: 48px;
+    font-weight: 700;
+    list-style: 1.2;
+}
+.btn2{
+    background-color: rgb(33, 71, 33);
+    border-radius: 15px;
+    padding: 15px 25px;
+    animation: zoomFade 1s ease-out forwards;
+}
+.btn3{
+    border-radius: 15px;
+    color: rgb(24, 23, 23);
+    padding: 15px 25px;
+    animation: zoomFade 1s ease-out forwards
+}
+.btn1{
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.fade-slide{
+    animation: fadeSlide 1s ease-out forwards;
+    animation-delay: 0.8s;
+}
+@keyframes fadeSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.zoom-fade{
+    animation: zoomFade 1s ease-out forwards;
+}
+.services{
+    font-size: 40px;
+}
